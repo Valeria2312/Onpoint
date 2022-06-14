@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'dinpro';
+    src: local('dinpro'),
+    url(../../fonts/dinpro_regular.otf);
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy'),
+    url(../../fonts/Gilroy-Regular.ttf);
+}
+.FirstSlide {
+    background: url("./icons/Layer 7.png")   0% 0% no-repeat,
+    url("./icons/Layer 4 copy 2.png")  100% 0% no-repeat ,
+    url("./icons/pink_sperm.png") 0% 90% no-repeat;
+
+    /*height: 768px;*/
+    transform: translate3d(0px, 0px, 0px);
+    height: 715px;
+}
+.FirstSlide__img-first {
+    bottom: 521px;
+    left: 855px;
+    max-width: 100px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.FirstSlide__img-second {
+    max-width: 64px;
+    position: absolute;
+    right: 216px;
+    top: 62px;
+    width: 100%;
+}
+.FirstSlide__img-third {
+    bottom: -3px;
+    max-width: 230px;
+    position: absolute;
+    right: 254px;
+    width: 100%;
+}
+.FirstSlide__img-fourth {
+    bottom: 193px;
+    left: 21px;
+    max-width: 74px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+.FirstSlide__img-fifth {
+    max-width: 583px;
+    position: absolute;
+    right: 7px;
+    top: 100px;
+}
+.FirstSlide_title {
+    margin: 0 auto;
+    max-width: 894px;
+    padding-top: 91px;
+    width: 100%;
+}
+.FirstSlide_title__hello {
+    font-family: dinpro, serif;
+    font-size: 29px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 33px;
+    margin: 0 0 16px;
+    max-width: 115px;
+    width: 100%;
+}
+.FirstSlide_title__preview {
+    font-family: Gilroy,serif,"sans-serif";
+    font-size: 100px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    line-height: 120px;
+    max-width: 915px;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-end;
+
+
+}
+
+.FirstSlide_title__header{
+    margin: 0;
+    font-size: 109px;
+    font-weight: lighter;
+}
+
+.FirstSlide_btn {
+    display: inline;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    padding-left: 27px;
+}
+
+.bacillus_animation__1 {
+    margin-top: 200px;
+margin-left: 860px;
+}
+
+
+
+
+
+@keyframes animation-first {
+    0%{
+    }
+    50%{
+        transform-origin: right;
+        transform: translate(-112px);
+    }
+    90%{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes animation-second {
+    0%{
+    }
+    50%{
+        transform-origin: right;
+        transform: translate(120px);
+    }
+    90%{
+        transform-origin: top;
+        transform: translate(91px) scale(1.5);
+    }
+}
+
+@keyframes animation-third {
+    0%{
+    }
+    50%{
+        transform: scale(1.5) translate(15px);
+        transform-origin: right;
+    }
+}
+
+@keyframes animation-fourth {
+    0%{
+    }
+    50%{
+        transform: scale(0.5) translate(169px);
+        transform-origin: bottom right;
+    }
+}
+
+@keyframes animation-message {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.animation-first{
+    animation: animation-first 10s linear 0s infinite normal none;
+}
+
+.animation-second{
+    animation: animation-second 10s linear 0s infinite normal none;
+}
+
+.animation-third{
+    animation: animation-second 10s linear 0s infinite normal none;
+}
+
+.animation-fourth{
+    animation: animation-fourth 10s linear 0s infinite normal none;
+}
+
+.animation-message{
+    animation: animation-message 5s linear 0s infinite normal none;
+}
