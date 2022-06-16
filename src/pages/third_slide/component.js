@@ -22,42 +22,42 @@ function ThirdSlide() {
       <img
         src={img1}
         alt="Фоновое изображение"
-        className="key-message__img-first animation-first"
+        className="key-message__img-first"
       />
       <img
         src={img2}
         alt="Фоновое изображение"
-        className="key-message__img-second animation-second"
+        className="key-message__img-second"
       />
       <img
         src={img3}
         alt="Фоновое изображение"
-        className="key-message__img-third animation-third"
+        className="key-message__img-third"
       />
       <img
         src={img4}
         alt="Фоновое изображение"
-        className="key-message__img-fourth animation-fourth"
+        className="key-message__img-fourth"
       />
       <img
         src={img5}
         alt="Фоновое изображение"
-        className="key-message__img-fifth animation-second"
+        className="key-message__img-fifth"
       />
       <img
         src={img6}
         alt="Фоновое изображение"
-        className="key-message__img-sixth animation-second"
+        className="key-message__img-sixth"
       />
       <img
         src={img7}
         alt="Фоновое изображение"
-        className="key-message__img-seventh animation-third"
+        className="key-message__img-seventh"
       />
       <img
         src={img8}
         alt="Фоновое изображение"
-        className="key-message__img-eighth animation-fourth"
+        className="key-message__img-eighth"
       />
       <div className="ThirdSlide_title">
         <div className="ThirdSlide_title__subheader">ключевое сообщение</div>
@@ -91,7 +91,6 @@ function ThirdSlide() {
         <button
           className="ThirdSlide_btn"
           onClick={() => {
-            console.log("lol");
             setModalActive(true);
           }}
         >

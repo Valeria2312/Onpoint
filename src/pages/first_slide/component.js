@@ -6,7 +6,7 @@ import img3 from "./icons/Layer 4.png";
 import img4 from "./icons/bakti_1.png";
 import img5 from "./icons/pink_sperm_1.png";
 
-function FirstSlide() {
+function FirstSlide({ showSlide }) {
   return (
     <div className="FirstSlide">
       <img
@@ -47,6 +47,7 @@ function FirstSlide() {
               alt="Logo"
               loading={"lazy"}
               className="FirstSlide_btn__img"
+              onClick={(e) => showSlide(1)}
             />
           </button>
         </div>

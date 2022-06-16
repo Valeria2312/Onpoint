@@ -13,7 +13,7 @@
     background: url("./icons/body.png")0 0 no-repeat;
     height: 768px;
     min-width: 1024px;
-    position: fixed;
+    position: absolute;
     top:0;
     left: 0;
     display: flex;
@@ -78,23 +78,14 @@
     max-width: 264px;
     width: 100%;
 }
-.popup__lists {
-    display: flex;
-    margin-bottom: 40px;
-    margin-left: 230px;
-    max-width: 480px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    width: 100%;
-}
 .popup__list {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.popup__list-active {
-    display: block!important;
-}
+/*.popup__list-active {*/
+/*    display: block!important;*/
+/*}*/
 .popup__item {
     margin-bottom: 20px;
 }
@@ -110,45 +101,4 @@
     font-size: 24px;
     font-weight: 300;
     margin: 0;
-}
-.popup__btns {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 20px 220px;
-    max-width: 80px;
-    padding-bottom: 32px;
-    width: 100%;
-}
-.popup__btn-left {
-    background-color: transparent;
-    background-image: url("./icons/btn_1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: none;
-    cursor: pointer;
-    height: 18px;
-    padding: 0;
-    width: 11px;
-}
-.popup__point.popup__list-active {
-    background-color: #fc6da9;
-    border: 1px solid #fc6da9;
-}
-.popup__point {
-    border: 1px solid #000;
-    border-radius: 10px;
-    height: 10px;
-    width: 10px;
-}
-.popup__btn-right {
-    background-color: transparent;
-    background-image: url("./icons/btn_next.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: none;
-    cursor: pointer;
-    height: 18px;
-    padding: 0;
-    width: 11px;
 }

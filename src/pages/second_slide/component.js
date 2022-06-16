@@ -1,7 +1,8 @@
 import "./style.css";
 import bg from "./icons/все.png";
 
-function SecondSlide() {
+function SecondSlide({ currentSlide }) {
+  const secondSlideAnimation = currentSlide === 2;
   return (
     <>
       <div className="SecondSlide_title">

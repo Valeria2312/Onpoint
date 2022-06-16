@@ -1,5 +1,5 @@
 import "./style.css";
-import bottle from "../icons/bottle.png";
+import { Carousel } from "./Carousel/Carousel";
 
 const Modal = ({ active, setActive }) => {
   return (
@@ -15,8 +15,8 @@ const Modal = ({ active, setActive }) => {
           <h1 className="popup__title">
             BREND<b>XY</b>
           </h1>
-          <div className="popup__lists">
-            <ul className="popup__list popup__list_first popup__list-active">
+          <Carousel>
+            <ul className="popup__list  popup__list-active">
               <li className="popup__item">
                 <p className="popup__item-number">01</p>
                 <p className="popup__item-text">
@@ -36,33 +36,27 @@ const Modal = ({ active, setActive }) => {
                 </p>
               </li>
             </ul>
-            {/*<ul className="popup__list popup__list_second">*/}
-            {/*  <li className="popup__item">*/}
-            {/*    <p className="popup__item-number">04</p>*/}
-            {/*    <p className="popup__item-text">*/}
-            {/*      Mi bibendum neque egestas congue quisque egestas diam*/}
-            {/*    </p>*/}
-            {/*  </li>*/}
-            {/*  <li className="popup__item">*/}
-            {/*    <p className="popup__item-number">05</p>*/}
-            {/*    <p className="popup__item-text">*/}
-            {/*      Venenatis lectus magna fringilla urna*/}
-            {/*    </p>*/}
-            {/*  </li>*/}
-            {/*  <li className="popup__item">*/}
-            {/*    <p className="popup__item-number">06</p>*/}
-            {/*    <p className="popup__item-text">*/}
-            {/*      Venenatis lectus magna fringilla urna*/}
-            {/*    </p>*/}
-            {/*  </li>*/}
-            {/*</ul>*/}
-          </div>
-          <div className="popup__btns">
-            <button className="popup__btn-left"></button>
-            <div className="popup__point popup__point_first popup__point_active"></div>
-            <div className="popup__point popup__point_second"></div>
-            <button className="popup__btn-right"></button>
-          </div>
+            <ul className="popup__list">
+              <li className="popup__item">
+                <p className="popup__item-number">04</p>
+                <p className="popup__item-text">
+                  Mi bibendum neque egestas congue quisque egestas diam
+                </p>
+              </li>
+              <li className="popup__item">
+                <p className="popup__item-number">05</p>
+                <p className="popup__item-text">
+                  Venenatis lectus magna fringilla urna
+                </p>
+              </li>
+              <li className="popup__item">
+                <p className="popup__item-number">06</p>
+                <p className="popup__item-text">
+                  Venenatis lectus magna fringilla urna
+                </p>
+              </li>
+            </ul>
+          </Carousel>
         </div>
       </div>
     </div>

@@ -1,15 +1,23 @@
+
+.ThirdSlide{
+    position: relative;
+    min-width: 1024px;
+    min-height: 768px;
+}
+
 .ThirdSlide_title {
-    padding-left: 350px;
+    padding-left: 333px;
     padding-top: 150px;
     padding-bottom: 10px;
-    height: 100%;
 }
+
 .key-message__img-first {
     left: 198px;
     max-width: 36px;
     position: absolute;
     top: 66px;
     width: 100%;
+    animation: animation-first 10s linear 0s infinite normal none;
 }
 .key-message__img-second {
     left: 184px;
@@ -18,6 +26,7 @@
     top: 156px;
     width: 100%;
     z-index: 2;
+    animation: animation-second 10s linear 0s infinite normal none;
 }
 .key-message__img-third {
     left: 77px;
@@ -26,6 +35,7 @@
     top: 212px;
     width: 100%;
     z-index: 1;
+    animation: animation-second 10s linear 0s infinite normal none;
 }
 .key-message__img-fourth {
     left: 188px;
@@ -34,6 +44,7 @@
     top: 318px;
     width: 100%;
     z-index: 1;
+    animation: animation-fourth 10s linear 0s infinite normal none;
 }
 .key-message__img-fifth {
     bottom: 283px;
@@ -41,6 +52,7 @@
     max-width: 31px;
     position: absolute;
     width: 100%;
+    animation: animation-second 10s linear 0s infinite normal none;
 }
 .key-message__img-sixth {
     bottom: 139px;
@@ -49,6 +61,7 @@
     position: absolute;
     width: 100%;
     z-index: 2;
+    animation: animation-second 10s linear 0s infinite normal none;
 }
 .key-message__img-seventh {
     bottom: 114px;
@@ -57,6 +70,7 @@
     position: absolute;
     width: 100%;
     z-index: 1;
+    animation: animation-second 10s linear 0s infinite normal none;
 }
 .key-message__img-eighth {
     bottom: -2px;
@@ -65,7 +79,9 @@
     position: absolute;
     width: 100%;
     z-index: 2;
+    animation: animation-fourth 10s linear 0s infinite normal none;
 }
+
 .ThirdSlide_title__subheader {
     font-family: DINPro,Arial,"sans-serif";
     font-size: 30px;
@@ -82,7 +98,6 @@
 }
 .ThirdSlide_img {
     bottom: 0;
-    left: 50px;
     max-width: 233px;
     position: absolute;
     width: 100%;
@@ -91,9 +106,11 @@
 }
 .ThirdSlide_elems {
     display: flex;
-    margin-left: 281px;
+    margin-left: 238px;
     max-width: 685px;
     width: 100%;
+    position: fixed;
+    margin-top: 54px;
 }
 
 .ThirdSlide_elem__1 {
@@ -161,14 +178,56 @@
     border: none;
     align-items: center;
     border-radius: 40px;
-    bottom: 116px;
+    bottom: 0px;
     display: flex;
     letter-spacing: 1px;
     max-width: 263px;
-    padding: 17px 19px;
+    padding: 0px 78px;
     position: absolute;
     right: 80px;
     z-index: 0;
 }
 
+@keyframes animation-first {
+    0%{
+    }
+    50%{
+        transform-origin: right;
+        transform: translate(-112px);
+    }
+    90%{
+        transform: scale(1.5);
+    }
+}
+
+@keyframes animation-second {
+    0%{
+    }
+    50%{
+        transform-origin: right;
+        transform: translate(120px);
+    }
+    90%{
+        transform-origin: top;
+        transform: translate(91px) scale(1.5);
+    }
+}
+
+@keyframes animation-third {
+    0%{
+    }
+    50%{
+        transform: scale(1.5) translate(15px);
+        transform-origin: right;
+    }
+}
+
+@keyframes animation-fourth {
+    0%{
+    }
+    50%{
+        transform: scale(0.5) translate(169px);
+        transform-origin: bottom right;
+    }
+}
 

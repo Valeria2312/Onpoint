@@ -9,13 +9,15 @@
     url(../../fonts/Gilroy-Regular.ttf);
 }
 .FirstSlide {
-    background: url("./icons/Layer 7.png")   0% 0% no-repeat,
+    background: url("./icons/Layer 7.png")   0% 10% no-repeat,
     url("./icons/Layer 4 copy 2.png")  100% 0% no-repeat ,
     url("./icons/pink_sperm.png") 0% 90% no-repeat;
-
     /*height: 768px;*/
     transform: translate3d(0px, 0px, 0px);
-    height: 715px;
+    position: relative;
+    /*min-height: 768px;*/
+    min-width: 1024px;
+    min-height: 768px;
 }
 .FirstSlide__img-first {
     bottom: 521px;
@@ -24,6 +26,7 @@
     position: absolute;
     width: 100%;
     z-index: -1;
+    animation: animation-first 10s linear 0s infinite normal none;
 }
 
 .FirstSlide__img-second {
@@ -32,6 +35,7 @@
     right: 216px;
     top: 62px;
     width: 100%;
+    animation: animation-second 10s linear 0s infinite normal none;
 }
 .FirstSlide__img-third {
     bottom: -3px;
@@ -39,6 +43,7 @@
     position: absolute;
     right: 254px;
     width: 100%;
+    animation: animation-second 10s linear 0s infinite normal none;
 }
 .FirstSlide__img-fourth {
     bottom: 193px;
@@ -47,17 +52,18 @@
     position: absolute;
     width: 100%;
     z-index: -1;
+    animation: animation-fourth 10s linear 0s infinite normal none;
 }
 .FirstSlide__img-fifth {
     max-width: 583px;
     position: absolute;
-    right: 7px;
-    top: 100px;
+    right: 23px;
+    top: 155px;
 }
 .FirstSlide_title {
     margin: 0 auto;
     max-width: 894px;
-    padding-top: 91px;
+    padding-top: 164px;
     width: 100%;
 }
 .FirstSlide_title__hello {
@@ -84,9 +90,7 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-items: flex-end;
-
-
+    align-items: center;
 }
 
 .FirstSlide_title__header{
@@ -107,10 +111,6 @@
     margin-top: 200px;
 margin-left: 860px;
 }
-
-
-
-
 
 @keyframes animation-first {
     0%{
@@ -153,33 +153,4 @@ margin-left: 860px;
         transform: scale(0.5) translate(169px);
         transform-origin: bottom right;
     }
-}
-
-@keyframes animation-message {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
-.animation-first{
-    animation: animation-first 10s linear 0s infinite normal none;
-}
-
-.animation-second{
-    animation: animation-second 10s linear 0s infinite normal none;
-}
-
-.animation-third{
-    animation: animation-second 10s linear 0s infinite normal none;
-}
-
-.animation-fourth{
-    animation: animation-fourth 10s linear 0s infinite normal none;
-}
-
-.animation-message{
-    animation: animation-message 5s linear 0s infinite normal none;
 }

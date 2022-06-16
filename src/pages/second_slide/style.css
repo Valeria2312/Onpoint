@@ -1,15 +1,16 @@
 .SecondSlide_title {
     margin-top: 164px;
-    /*background: url("icons/все.png") 100% 20% no-repeat;*/
-    height: 549px;
+    position: relative;
     margin-left: 50px;
+    min-width: 1024px;
+    min-height: 768px;
 }
 .SecondSlide_title__bg {
     left: 45%;
-    top: 20%;
+    max-width: 1024px;
     position: absolute;
-    animation: animation-message 5s linear 0s infinite normal none;
-    z-index: -3;
+    top: 0;
+    animation: animation-bg 5s linear 0s infinite normal none;
 }
 .SecondSlide_title__header {
     padding-left: 58px;
@@ -31,6 +32,7 @@
     overflow: auto;
     direction: rtl;
     text-align: left;
+    position: relative;
 }
 
 .SecondSlide_title__text::-webkit-scrollbar {
@@ -51,4 +53,13 @@
     background-color: #ed5690;
     background-size: 5px;
     box-shadow: inset  0 0 5px rgba(0,0,0,0.5);
+}
+
+@keyframes animation-bg {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
