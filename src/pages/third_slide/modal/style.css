@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'dinpro';
+    src: local('dinpro'),
+    url(../../../fonts/dinpro_regular.otf);
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy'),
+    url(../../../fonts/Gilroy-Regular.ttf);
+}
+.ModalSlide {
+    z-index: 1;
+    background: url("./icons/body.png")0 0 no-repeat;
+    height: 768px;
+    min-width: 1024px;
+    position: absolute;
+    top:0;
+    left: 0;
+    display: flex;
+    transform: scale(0);
+}
+.ModalSlide.active {
+    transform: scale(1);
+}
+.popup {
+    display: flex;
+    height: 573px;
+    margin-left: 120px;
+    margin-top: 108px;
+    max-width: 843px;
+    width: 100%;
+}
+.overlay {
+    background-color: #16273e;
+    height: 100%;
+    left: 0;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+}
+.popup__content {
+    background-color: #fff;
+    border-radius: 38px;
+    box-sizing: border-box;
+    padding-top: 53px;
+    position: relative;
+}
+.popup__close-btn {
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url("./icons/btn_close.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: none;
+    height: 21px;
+    position: absolute;
+    right: 60px;
+    top: 30px;
+    width: 21px;
+}
+.popup__text {
+    font-family: dinpro,Arial,"sans-serif";
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0 auto;
+    max-width: 387px;
+    text-transform: uppercase;
+    width: 100%;
+}
+.popup__title {
+    font-family: dinpro, Arial, "sans-serif";
+    font-size: 100px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin: 0 0 23px 220px;
+    max-width: 264px;
+    width: 100%;
+}
+.popup__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*.popup__list-active {*/
+/*    display: block!important;*/
+/*}*/
+.popup__item {
+    margin-bottom: 20px;
+}
+.popup__item-number {
+    color: #8cc9e8;
+    font-family: Gilroy,Arial,"sans-serif";
+    font-size: 24px;
+    font-weight: 800;
+    margin: 0 0 8px;
+}
+.popup__item-text {
+    font-family: Gilroy,Arial,"sans-serif";
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;
+}
